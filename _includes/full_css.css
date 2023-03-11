@@ -115,11 +115,19 @@ blockquote.quote-holder div {
     width: 100%;
 }
 
-.labeled-paragraph div:first-child {
+.labeled-paragraph.bios div:first-child {
     width: 20%;
+}
+
+.labeled-paragraph div:first-child {
     font-weight: bold;
     text-transform: uppercase;
     padding-left: 15%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .labeled-paragraph div:nth-child(2) {
@@ -208,7 +216,7 @@ h1 {
 }
 
 .travel-tip-button {
-    width: 100%;
+    width: 220px;
 }
 
 .tips-box {
@@ -216,7 +224,7 @@ h1 {
     flex-direction: row;
     background-color: #cde2db;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     height: 290px;
 }
 

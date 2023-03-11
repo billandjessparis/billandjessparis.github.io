@@ -9,7 +9,8 @@
         @media screen and (max-device-width: 480px) {
             body {
                 width: 100%;
-                font-size: 30px;
+                font-size: 36px;
+                line-height: 36px;
             }
 
             p {
@@ -25,11 +26,6 @@
                 border-radius: 16px;
             }
 
-            .labeled-paragraph div:nth-child(2) {
-                width: 90%;
-                margin-left: 4%;
-                margin-right: 4%;
-            }
 
             .footer {
                 font-size: 30px;
@@ -77,9 +73,28 @@
             }
 
             .travel-tip-button {
-                width: 300px;
+                width: 250px;
             }
-        }
+
+            .labeled-paragraph div:nth-child(2).home-page-bio {
+                padding-left: 0;
+                width: 90%;
+                margin-left: 4%;
+                margin-right: 4%;
+            }
+
+            .labeled-paragraph.bios div:first-child {
+                width: 250px;
+            }
+
+            .labeled-paragraph div:first-child {
+                padding-left: 0;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
         -->
     </style>
 </head>
