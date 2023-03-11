@@ -1,22 +1,85 @@
 <html>
-    <head>
-        <title>Bill & Jess - Best of Paris 2022</title>
+<head>
+    <title>Bill & Jess - Best of Paris 2022</title>
 
-        <style>
+    <style>
         <!--
-            {% include full_css.css %}
-        -->
-        </style>
+        {% include full_css.css %}
 
-        <style media="screen and (max-device-width: 1200px)">
-        <!--
-        .content {
-            flex-direction: column;
+        @media screen and (max-width: 1200px) {
+            body {
+                width: 70%;
+                font-size: 20px;
+            }
+
+            .content {
+                flex-direction: column;
+            }
+
+            .full-size-on-small-screens {
+                width: 100%;
+            }
+
+            img.inline-image-right, img.inline-image {
+                float: none;
+            }
+
+            .labeled-paragraph {
+                flex-direction: column;
+            }
+
+            .labeled-paragraph div:first-child {
+                width: 100%;
+            }
+
+            .ribbon {
+                flex-direction: column;
+            }
+
+            .ribbon img {
+                width: 60%;
+            }
+
+            .featured-food {
+                width: 100%;
+            }
         }
         -->
-        </style>
-    </head>
+    </style>
+</head>
 <body>
-    {{ content }}
+<div class="content">
+
+    <div class="hover-menu">
+        <a href="index.html"  {% if page.name == "index.html" %}class="highlighted-menu-item"{% endif %}>home</a>
+
+        <a href="pretour.html"  {% if page.name == "pretour.html" %}class="highlighted-menu-item"{% endif %}>pre tour</a>
+        <a href="day1.html" {% if page.name == "day1.html" %}class="highlighted-menu-item"{% endif %}>day 1</a>
+        <a href="day2.html" {% if page.name == "day2.html" %}class="highlighted-menu-item"{% endif %}>day 2</a>
+        <a href="day3.html" {% if page.name == "day3.html" %}class="highlighted-menu-item"{% endif %}>day 3</a>
+        <a href="day4.html" {% if page.name == "day4.html" %}class="highlighted-menu-item"{% endif %}>day 4</a>
+        <a href="day5.html" {% if page.name == "day5.html" %}class="highlighted-menu-item"{% endif %}>day 5</a>
+        <a href="day6.html" {% if page.name == "day6.html" %}class="highlighted-menu-item"{% endif %}>day 6</a>
+        <a href="side_trips.html" {% if page.name == "side_trips.html" %}class="highlighted-menu-item"{% endif %}>side trips</a>
+
+        |&nbsp;&nbsp;&nbsp;
+
+        <a href="foods.html" {% if page.name == "foods.html" %}class="highlighted-menu-item"{% endif %}>food</a>
+        <a href="highlights.html" {% if page.name == "highlights.html" %}class="highlighted-menu-item"{% endif %}>favorites</a>
+        <a href="gardens.html" {% if page.name == "gardens.html" %}class="highlighted-menu-item"{% endif %}>gardens</a>
+        <a href="phrasebook.html" {% if page.name == "phrasebook.html" %}class="highlighted-menu-item"{% endif %}>phrases</a>
+        <a href="tips.html" {% if page.name == "tips.html" %}class="highlighted-menu-item"{% endif %}>tips</a>
+    </div>
+
+    <div>
+        {{ content }}
+    </div>
+</div>
+
+<div class="footer">
+    &copy; 2023 Bill & Jess Atkins, all photos were taken by us on our trip!
+</div>
+
+
 </body>
 </html>

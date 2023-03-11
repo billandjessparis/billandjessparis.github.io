@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<br>
+
+<div style="text-align: center">
+    <img src="images/slides/slide_phrasebook.jpeg" width="1000px">
+</div>
+
+<br>
+
+<h1>Traveler's French Cheat Sheet</h1>
+
+<p>
+    Here are some phrases we found useful when traveling in France. It's not hard to get around France as an English speaker. In Paris, at least,
+    a lot of people who work in restaurants, hotels or museums can speak English. But since you can't always count on it,
+    it's always good to know a few helpful expressions!
+</p>
+
+<p>
+    By the way, most people will want to help you out, but don't assume people will speak English; to be polite,
+    ask them first if they do.
+</p>
+
+<p>
+    Another helpful tip is to use the Google Translate camera feature to translate signs, menus and written text.
+</p>
+
+<div>
+    {% for phrase in site.data.phrases %}
+    <p>
+        <strong>{{ phrase.french}}</strong>
+        {{ phrase.english }}
+        <br>
+        <span style="color: gray">
+            Pronounced: <em>{{ phrase.pronunciation }}</em>
+        </span>
+    </p>
+    {% endfor %}
+
+</div>
+
+{% include next_button.html text="Nos conseils (Our Tips)" url="tips.html" %}

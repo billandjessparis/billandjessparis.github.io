@@ -1,31 +1,129 @@
 ---
 layout: default
 ---
+<img class="header" src="images/slides/slide_home.jpg" width="800px">
 
-<div class="header-image">
-    <h1>Rick Steves Best of Paris in 7 Days 2022</h1>
+<h1>Bienvenue!</h1>
+<div class="translation">Let us tell you about our trip!</div>
+
+<div>
+    <p>
+        We're Jess and Bill and this our Rick Steves tour scrapbook! In April 2022, we took the
+        seven-day <a href="https://www.ricksteves.com/tours/france/paris"><strong>Rick Steves' Best of Paris</strong></a> tour.
+        These pages and photos tell the story of our Parisian adventure, as well as a few side trips we took on our own. This was our first trip to continental Europe and we learned a lot on
+        the tour! We included a ton of <strong>travel tips</strong>, so you can relax and have as much fun as we did. Browse through each individual day of the trip using the menu above.
+        Below you can find a map of our trip, some more about
+        who we are, and a few highlights.
+    </p>
+    <p>
+
+    </p>
+    <blockquote class="quote-holder">
+        <div>
+            &ldquo;We learned a lot on the tour! We included a ton of tips, so you can relax and have as much fun as we did.&rdquo;
+        </div>
+    </blockquote>
+    <p>
+        We'd been planning our first trip to France in early 2020, but the COVID-19 pandemic had put those plans on hold. When
+        Rick Steves announced that they were starting tours again for 2022, we were really excited, and
+        decided it was time to make our travel dreams a reality.
+        We chose Rick Steves because back in 2017, we went on the best trip we've ever taken, traveling around the UK on Rick Steves'
+        <a href="https://www.ricksteves.com/tours/england/best-england-tour">Best of England &  Wales tour</a>.
+        We had an amazing time, exploring cozy villages, and enjoying the beautiful city of Bath.
+    </p>
+
 </div>
 
-<div class="content">
-    <div class="left-column">
-        <p>
-            Jump to:
-        </p>
+<h1>Map of Our Paris Adventures</h1>
+<div class="translation">Zoom in or click a pin for details!</div>
 
-        Day 1<br>
-        Day 2<br>
-    </div>
+<div class="map">
+    <iframe src="https://www.google.com/maps/d/embed?mid=1r1s7qTdAUevTRVA7V6cvHAjyYe9qGrY&ehbc=2E312F" width="640" height="480"></iframe>
+</div>
 
+<h1>Enchanté!</h1>
+<div class="translation">"Nice to Meet You!"</div>
+
+<div class="labeled-paragraph">
     <div>
-        {% for i in (1..10) %}
-            <p>here's some text about the day we had in France and the things we did and the people we lorem ispum</p>
-
-            <img src="images/paris.jpg" width="800px" />
-        {% endfor %}
+        <img style="width:100%" src="images/about/jess.jpg">
+    </div>
+    <div>
+        Bonjour! I’m <strong>Jess</strong>, a novice traveller who loves art museums, fashion, gardening, dessert, and city life.
+        I wanted to go to Paris because it’s home to some of the best examples of my favorite things. I love trying
+        new things and I enjoyed all the history and knowledge I gained from our wonderful tour guide, Marie.
     </div>
 </div>
 
-<div class="footer">
-    &copy; 2023 Bill & Jess Atkins
+
+<div class="labeled-paragraph">
+    <div>
+        <img style="width:100%" src="images/about/bill.jpg">
+    </div>
+    <div>
+        Bonjour! I’m <strong>Bill</strong>, I love traveling with my wife Jess and couldn’t wait to finally go to Europe after spending
+        so long at home in 2020. I enjoy learning about history, architecture, and art. I spent some time
+        studying French during the pandemic, and was looking forward to a chance to try it out in the real world.
+    </div>
 </div>
 
+<h1 style="padding-top: 30px">Our Trip Highlights</h1>
+<div class="translation">Click to see some of our trip highlights below!</div>
+
+<div class="ribbon">
+    <div>
+        <a href="foods.html">
+            <img src="images/tiles/food.jpg"><br>
+            food ☞
+        </a>
+    </div>
+    <div>
+        <a href="highlights.html">
+            <img src="images/tiles/highlights.jpg"><br>
+            favorites ☞
+        </a>
+    </div>
+    <div>
+        <a href="gardens.html">
+            <img src="images/tiles/gardens.jpg"><br>
+            gardens ☞
+        </a>
+    </div>
+    <div>
+        <a href="phrasebook.html">
+            <img src="images/tiles/phrases.jpg"><br>
+            phrases ☞
+        </a>
+    </div>
+    <div>
+        <a href="tips.html">
+            <img src="images/tiles/tips.jpg"><br>
+            tips ☞
+        </a>
+    </div>
+</div>
+
+<br>
+
+<img class="header" src="images/slides/slide_stayed.jpg" width="800px">
+
+<h1>Notre Hôtel</h1>
+<div class="translation">"Our Hotel"</div>
+
+<div>
+    <p>
+        We stayed at <strong>Hotel Londres Eiffel</strong>, a stylish boutique hotel in the 7th Arrondissement (district) of Paris,
+        just blocks from the <strong>Eiffel Tower</strong> and <strong>Rue Cler</strong>, a beautiful shopping street full of tasty food and flowers.
+        The staff were super helpful: Arnaud at the front desk recommended restaurants and helped us book taxis.
+        The tour group hung out in the breakfast room every morning and even enjoyed drinks together in the lobby
+        lounge one evening. We also had the pleasure of a rare visit from Samba, the hotel owner’s Golden
+        Retriever (seen above!).
+    </p>
+
+    <p style="font-weight: bold">
+        Ready to find out what came next? Follow along as we explore Paris and the area around it!
+    </p>
+</div>
+
+
+{% include next_button.html text="On y va! (\"Let's go!\")" url="pretour.html" %}
