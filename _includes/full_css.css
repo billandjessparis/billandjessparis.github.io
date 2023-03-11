@@ -127,6 +127,7 @@ blockquote.quote-holder div {
 }
 
 .labeled-paragraph div:nth-child(2).home-page-bio {
+    padding-left: 20px;
     width: 50%;
 }
 
@@ -204,4 +205,30 @@ h1 {
 .garden-grid img {
     width: 100%;
     border-radius: 0;
+}
+
+.travel-tip-button {
+    width: 100%;
+}
+
+.tips-box {
+    display: flex;
+    flex-direction: row;
+    background-color: #cde2db;
+    align-items: center;
+    justify-items: center;
+    height: 290px;
+}
+
+.tips-box img {
+    width: 544px;
+    border-radius: 0;
+    padding: 0;
+}
+
+.tips-box div.farewell {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
 }
