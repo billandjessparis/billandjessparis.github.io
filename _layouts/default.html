@@ -31,10 +31,6 @@
                 line-height: 48px;
             }
 
-            .hover-menu a::after {
-                content: "    \2022";
-            }
-
             .footer {
                 font-size: 30px;
             }
@@ -116,6 +112,10 @@
                 padding-bottom: 60px;
                 padding-top: 60px;
             }
+
+            .mobile-divider {
+                display: inline;
+            }
         }
         -->
     </style>
@@ -125,22 +125,33 @@
 
     <div class="hover-menu">
         <a href="index.html"  {% if page.name == "index.html" %}class="highlighted-menu-item"{% endif %}>home</a>
-
+        <span class="mobile-divider">&middot;</span>
         <a href="pretour.html"  {% if page.name == "pretour.html" %}class="highlighted-menu-item"{% endif %}>pre tour</a>
+        <span class="mobile-divider">&middot;</span>
         <a href="day1.html" {% if page.name == "day1.html" %}class="highlighted-menu-item"{% endif %}>day 1</a>
+        <span class="mobile-divider">&middot;</span>
         <a href="day2.html" {% if page.name == "day2.html" %}class="highlighted-menu-item"{% endif %}>day 2</a>
+        <span class="mobile-divider">&middot;</span>
         <a href="day3.html" {% if page.name == "day3.html" %}class="highlighted-menu-item"{% endif %}>day 3</a>
+        <span class="mobile-divider">&middot;</span>
         <a href="day4.html" {% if page.name == "day4.html" %}class="highlighted-menu-item"{% endif %}>day 4</a>
+        <span class="mobile-divider">&middot;</span>
         <a href="day5.html" {% if page.name == "day5.html" %}class="highlighted-menu-item"{% endif %}>day 5</a>
+        <span class="mobile-divider">&middot;</span>
         <a href="day6.html" {% if page.name == "day6.html" %}class="highlighted-menu-item"{% endif %}>day 6</a>
+        <span class="mobile-divider">&middot;</span>
         <a href="side_trips.html" {% if page.name == "side_trips.html" %}class="highlighted-menu-item"{% endif %}>side trips</a>
 
         |&nbsp;&nbsp;&nbsp;
 
         <a href="foods.html" {% if page.name == "foods.html" %}class="highlighted-menu-item"{% endif %}>food</a>
+        <span class="mobile-divider">&middot;</span>
         <a href="highlights.html" {% if page.name == "highlights.html" %}class="highlighted-menu-item"{% endif %}>favorites</a>
+        <span class="mobile-divider">&middot;</span>
         <a href="gardens.html" {% if page.name == "gardens.html" %}class="highlighted-menu-item"{% endif %}>gardens</a>
+        <span class="mobile-divider">&middot;</span>
         <a href="phrasebook.html" {% if page.name == "phrasebook.html" %}class="highlighted-menu-item"{% endif %}>phrases</a>
+        <span class="mobile-divider">&middot;</span>
         <a href="tips.html" {% if page.name == "tips.html" %}class="highlighted-menu-item"{% endif %}>tips</a>
     </div>
 

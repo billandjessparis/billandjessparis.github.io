@@ -249,3 +249,7 @@ h1 {
 .page-title {
     color: #bcd1ca;
 }
+
+.mobile-divider {
+    display: none;
+}
